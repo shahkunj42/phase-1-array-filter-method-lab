@@ -13,7 +13,7 @@ function findMatching(array, name){
 
 let fuzzyMatch = (array, name) => {
     let newArray = array.filter(function(string){
-        return string.slice(0,2) == name;
+        return string.slice(0,name.length) == name;
     });
     return newArray
 }
